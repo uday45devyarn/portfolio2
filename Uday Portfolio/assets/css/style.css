@@ -1,0 +1,38 @@
+.container {
+    max-width: 1200px;
+    padding:  0 10px;
+    margin: auto;
+}
+/* 📱 Mobile view (max-width: 767px) */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    cursor: grab;
+    background-color:black;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+  @keyframes borderSpin {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-border-spin {
+    background-size: 200% 200%;
+    animation: borderSpin 4s linear infinite;
+  }
